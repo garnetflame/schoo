@@ -1,0 +1,76 @@
+import java.util.Scanner;
+public class Ex12_1car {
+
+	private String name;
+	private int width;
+	private int height;
+	private int length;
+	private double x;
+	private double y;
+	private double fuel;
+	private int number;
+	private double fillfuel;
+	
+	Ex12_1car(String name, int width,int height, int length,double fuel,int number, double fillfuel){
+		this.name = name;
+		this.width = width;
+		this.height = height;
+		this.length = length;
+		this.fuel = fuel;
+		this.number = number;
+		this.fillfuel = fillfuel;
+		x = y =0.0;
+	}
+		
+		double getX() {return x; }
+		double getY() {return y; }
+		double getFuel() {return fuel;}
+		void fillFuel() {
+			fuel = fillfuel;
+		}
+	
+
+	void putSpec() {
+		System.out.println("名前 : " + name);
+		System.out.println("車幅 : " + width +"mm");
+		System.out.println("車高 : " + height+"mm");
+		System.out.println("車長 : " + length+"mm");
+		System.out.println("ナンバー : " + number);
+	}
+	
+	boolean move(double dx ,double dy) {
+		double dist = Math.sqrt(dx * dx + dy * dy);
+		
+		if(dist > fuel) {
+			return true;
+		}else {
+			fuel -= dist;
+			x += dx;
+			y += dy;
+			return false;
+		}
+	}
+	
+	public void Idou() {
+		Scanner stdIn = new Scanner(System.in);
+	while(true) {
+		System.out.println("現在地(" + this.getX() + ","+ this.getY()+")・残り燃料 " +this.getFuel());
+		System.out.print("移動しますか？[Yes…1/No……0]) : ");
+		if(stdIn.nextInt() == 0)break;
+	
+		System.out.print("X方向への移動距離");
+		double dx = stdIn.nextDouble();
+		System.out.print("Y方向への移動距離");
+		double dy = stdIn.nextDouble();
+		
+		if(this.move(dx,dy)) {
+			System.out.println("燃料が足りません！");
+			System.out.print("燃料を追加しますか？[Yes…1/No……0]) : ");
+			if(stdIn.nextInt() == 1) 
+				this.fillFuel();
+		}
+	}	
+	}
+}	
+	
+

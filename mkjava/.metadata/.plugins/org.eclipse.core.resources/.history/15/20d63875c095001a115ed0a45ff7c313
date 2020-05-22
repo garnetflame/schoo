@@ -1,0 +1,45 @@
+
+public class Ex12_2Account {
+
+	private String name;//名義
+	private String no; //番号
+	private long balance;	//預金残高
+	private long timebalance; //預金残高（定期預金）
+	
+	Ex12_2Account(String name, String no,long balance,long timebalance){
+		this.name = name;
+		this.no = no;
+		this.balance = balance;
+		this.timebalance = timebalance;
+	}
+	
+	String getName() {
+		return name;
+	}
+	
+	String getNo() {
+		return no;
+	}
+	
+	long getBalance() {
+		return balance;
+	}
+	
+	long getTimebalance() {
+		return timebalance;
+	}
+	
+	//k円預ける
+	void deposit(long k) {
+		balance += k;
+	}
+	
+	//k円おろす
+	void withdraw(long k) {
+		balance -= k;
+	}
+	//定期預金を解約して全額普通預金にうつす
+	void cancel() {
+		balance += timebalance;
+	}
+}

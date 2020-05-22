@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class reidai2_11{
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		
+		System.out.println("x‚Æy‚ğ‰ÁŒ¸æœ‚µ‚Ü‚·B");
+		
+		System.out.print("x‚Ì’l : ");
+		double x = stdIn.nextDouble();
+		
+		System.out.print("y‚Ì’l : ");
+		double y = stdIn.nextDouble();
+		
+		System.out.println("x + y = " + (x + y));
+		System.out.println("x - y = " + (x - y));
+		System.out.println("x * y = " + (x * y));
+		System.out.println("x / y = " + (x / y));
+		System.out.println("x % y = " + (x % y));
+	}
+}		

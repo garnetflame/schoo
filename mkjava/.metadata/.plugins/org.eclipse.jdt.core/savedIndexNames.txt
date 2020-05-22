@@ -1,0 +1,9 @@
+INDEX VERSION 1.131+C:\Users\shoka\mkjava\.metadata\.plugins\org.eclipse.jdt.core
+1880236595.index
+3252705426.index
+1755401707.index
+2160985249.index
+1298841524.index
+3721765413.index
+1858102669.index
+2275655864.index

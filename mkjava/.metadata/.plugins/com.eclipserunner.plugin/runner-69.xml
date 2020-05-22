@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<runner version="1.0.0">
+    <category expanded="true" name="カテゴリーなし">
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex02_01"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex02_02"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex10_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex10_2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex12_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex12_2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex16_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex16_2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Ex8_2CarTester"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="NingenTester1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="Practice10_3"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_1"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_10"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_11"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_12"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_15"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_16"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_17"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_18"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_19"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_2"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_20"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_3"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_4"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_5"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_6"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_7"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_8"/>
+        <launchConfiguration bookmark="false" defaultLaunchMode="run" name="ex7_9"/>
+    </category>
+</runner>

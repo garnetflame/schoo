@@ -1,0 +1,13 @@
+
+public class AccountTime extends Account {
+	private long timebalance; //預金残高（定期預金）
+	
+	AccountTime(String name, String no,long balance,long timebalance){
+		super(name,no,balance);
+		this.timebalance = timebalance;
+	}
+	//定期預金を解約して全額普通預金にうつす
+	void cancel() {
+		balance += timebalance;
+	}
+}

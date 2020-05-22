@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Ex12_2 {
+
+	public static void main(String[] args) {
+		Scanner stdIn = new Scanner(System.in);
+		
+		System.out.println("aさんbさんのアカウント作成します");
+		System.out.print("aさんの口座番号 : ");
+		String NOa = stdIn.next();
+		System.out.print("bさんの口座番号 : ");
+		String NOb = stdIn.next();
+		System.out.println("aさんの預金残高 : ");
+		long balancea = stdIn.nextInt();
+		System.out.println("bさんの預金残高 : ");
+		long balanceb = stdIn.nextInt();
+		System.out.println("aさんの定期預金残高 : ");
+		long timebalancea = stdIn.nextInt();
+		System.out.println("bさんの定期預金残高 : ");
+		long timebalanceb = stdIn.nextInt();
+		
+		Ex12_2Account Accounta = new Ex12_2Account("a",NOa,balancea,timebalancea); 
+		Ex12_2Account Accountb = new Ex12_2Account("b",NOb,balanceb,timebalanceb);
+		
+		Accounta.cancel();
+		Accountb.cancel();
+		long x = Accounta.getBalance();
+		long y = Accounta.getBalance();
+		
+		System.out.println(compBalance(x,y));
+	}
+	
+	
+		public static int compBalance(long x , long y) {
+			if(x > y) {
+				return 1;
+			}else if(x < y){
+				return -1;
+			}else {
+				return 0;
+			}
+		}
+}	
